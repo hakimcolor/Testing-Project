@@ -1,27 +1,27 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const GenInfo = () => {
   const data = [
     {
-      src: "/GenInfo/free-shipping.png",
-      title: "Free Shipping",
-      text: "On all orders",
+      src: '/GenInfo/free-shipping.png',
+      title: 'Free Shipping',
+      text: 'On all orders',
     },
     {
-      src: "/GenInfo/coins.png",
-      title: "Payment Options",
-      text: "COD, cards, mobile payments",
+      src: '/GenInfo/coins.png',
+      title: 'Payment Options',
+      text: 'COD, cards, mobile payments',
     },
     {
-      src: "/GenInfo/product-return.png",
-      title: "Free Returns",
-      text: "Refunds within 7 days",
+      src: '/GenInfo/product-return.png',
+      title: 'Free Returns',
+      text: 'Refunds within 7 days',
     },
     {
-      src: "/GenInfo/support.png",
-      title: "24/7 Support",
-      text: "Always here to help",
+      src: '/GenInfo/support.png',
+      title: '24/7 Support',
+      text: 'Always here to help',
     },
   ];
 
@@ -48,16 +48,14 @@ const GenInfo = () => {
   );
 };
 
-export default GenInfo;
-
 export const Brands = () => {
   const navigate = useNavigate();
 
   const data = [
-    { src: "/GenInfo/adidas.jpg", name: "Adidas", to: "/search/adidas" },
-    { src: "/GenInfo/nike.png", name: "Nike", to: "/search/nike" },
-    { src: "/GenInfo/skechers.jpg", name: "Skechers", to: "/search/skechers" },
-    { src: "/GenInfo/puma.jpg", name: "Puma", to: "/search/puma" },
+    { src: '/GenInfo/adidas.jpg', name: 'Adidas', to: '/search/adidas' },
+    { src: '/GenInfo/nike.png', name: 'Nike', to: '/search/nike' },
+    { src: '/GenInfo/skechers.jpg', name: 'Skechers', to: '/search/skechers' },
+    { src: '/GenInfo/puma.jpg', name: 'Puma', to: '/search/puma' },
   ];
 
   return (
@@ -91,9 +89,14 @@ export const Brands = () => {
   );
 };
 
-
 export const BestSellers = () => {
   const navigate = useNavigate();
+  const data = [
+    { src: '/GenInfo/adidas.jpg', name: 'Adidas', to: '/search/adidas' },
+    { src: '/GenInfo/nike.png', name: 'Nike', to: '/search/nike' },
+    { src: '/GenInfo/skechers.jpg', name: 'Skechers', to: '/search/skechers' },
+    { src: '/GenInfo/puma.jpg', name: 'Puma', to: '/search/puma' },
+  ];
 
   return (
     <div className="flex flex-col items-center my-16 w-full">
@@ -125,3 +128,4 @@ export const BestSellers = () => {
     </div>
   );
 };
+export default GenInfo;
